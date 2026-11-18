@@ -20,7 +20,7 @@ Next.js 13 · React 18 · Semantic UI React · Solidity · Web3 · Truffle HDWal
 
 ## Project structure
 
-\`\`\`text
+```text
 pages/                   # Next.js screens and flows
 components/              # Shared UI components
 ethereum/
@@ -30,14 +30,14 @@ ethereum/
   record.js               # Frontend contract instance configuration
   web3.js                 # Browser/fallback provider configuration
 test/                    # Existing test scripts
-\`\`\`
+```
 
 ## Local development
 
-1. Clone the repository and run \`npm install\`.
-2. Configure a local test blockchain or suitable development RPC endpoint. For the browser fallback provider, set \`NEXT_PUBLIC_RPC_URL\` (example in [.env.example](.env.example)). Never expose private credentials in a browser-visible environment variable.
-3. Start the UI with \`npm run dev\`.
-4. The deployment script requires \`DEPLOYER_MNEMONIC\` and \`POLYGON_RPC_URL\` in the **deployment environment**. Use a newly generated test-only wallet; do not commit recovery phrases or RPC API keys.
+1. Clone the repository and run `npm install`.
+2. Configure a local test blockchain or suitable development RPC endpoint. For the browser fallback provider, set `NEXT_PUBLIC_RPC_URL` (example in [.env.example](.env.example)). Never expose private credentials in a browser-visible environment variable.
+3. Start the UI with `npm run dev`.
+4. The deployment script requires `DEPLOYER_MNEMONIC` and `POLYGON_RPC_URL` in the **deployment environment**. Use a newly generated test-only wallet; do not commit recovery phrases or RPC API keys.
 5. The current project uses legacy Solidity syntax and Web3 tooling. Compiler and runtime versions may require alignment before compilation and deployment. Local and deployed behavior has **not** been verified for this documentation update.
 
 ## Critical security notice
